@@ -10,6 +10,10 @@
             <td><%= item.quantity %> &times;</td> 
             <td><%= item.product.title %></td>
             <td class="item_price"><%= number_to_currency(item.total_price) %></td>
+            <td> <%= link_to 'Remove', line_item_path(item),
+                     confirm: 'Are you sure?',
+                     method: :delete %> </td>
+
         </tr>
     <% end %>
 
