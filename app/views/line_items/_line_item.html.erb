@@ -4,5 +4,5 @@
     <td class="item_price"><%= number_to_currency(line_item.total_price) %></td>
     <td> <%= link_to 'Remover', line_item_path(line_item),
              confirm: 'Are you sure?',
-             method: :delete %> </td>
+             method: :delete, remote: true %> </td>
 </tr>
