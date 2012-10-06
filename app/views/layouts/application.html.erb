@@ -14,11 +14,17 @@
 
     <div id="columns">
         <div id="side">
-        <ul>
-            <li><a href="http://www....">Home</a></li>
-            <li><a href="http://www..../faq">Questions</a></li>
-            <li><a href="http://www..../news">News</a></li>
-            <li><a href="http://www..../contact">Contact</a></li>
+           <div id="cart">
+            <% if @cart %>
+              <%= render @cart %>
+            <% end %>
+           </div>    
+           
+           <ul>
+                <li><a href="http://localhost:3000">Home</a></li>
+                <li><a href="http://localhost:3000">Questions</a></li>
+                <li><a href="http://localhost:3000">News</a></li>
+                <li><a href="http://localhost:3000">Contact</a></li>
             </ul>
         </div>
         <div id="main">
